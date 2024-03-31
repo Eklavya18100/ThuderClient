@@ -28,7 +28,7 @@ axios.interceptors.request.use(function (config:any) {
 
 axios.interceptors.response.use((response:any) => {
   const startTime:any = response.config.metadata.startTime;
-  const responseTime:any = new Date() - startTime;
+  const responseTime:any = new Date().getTime() - startTime;
   const modifiedResponse:any = {
     data: response.data,
     headers: response.headers,

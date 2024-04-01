@@ -1,4 +1,4 @@
-import { IconMessage } from '@tabler/icons-react'
+import { IconLayoutDashboard } from '@tabler/icons-react'
 
 export interface NavLink {
   title: string
@@ -13,10 +13,10 @@ export interface SideLink extends NavLink {
 
 export const sidelinks: SideLink[] = [
   {
-    title: 'Comments',
+    title: 'Dashboard',
     label: '',
     href: '/',
-    icon: <IconMessage size={18} />,
+    icon: <IconLayoutDashboard size={18} />,
   },
   /* {
     title: 'Tasks',

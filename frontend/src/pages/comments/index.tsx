@@ -29,7 +29,7 @@ import {
   getAllSubmissions,
   uploadFileSubmissionComment,
   uploadSubmissionsFile,
-} from '@/Actions/Submissions/SubmissionsActions'
+} from '@/Actions/SubmissionsActions'
 import {
   Dialog,
   DialogContent,

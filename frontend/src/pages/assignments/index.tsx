@@ -32,10 +32,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from '@/components/ui/select'
-import {
-  getAllAssignments,
-  getAllCourses,
-} from '@/Actions/Assignments/AssignmentsActions'
+import { getAllAssignments, getAllCourses } from '@/Actions/AssignmentsActions'
 import { useNavigate } from 'react-router-dom'
 export default function Dashboard() {
   const navigate = useNavigate()

@@ -41,16 +41,20 @@ const htmlToPdf = (html) => {
   });
 };
 // Route to fetch assignment submissions
-router.get("/courses", async (req, res) => {
+router.get("/courses/:user_id", async (req, res) => {
+  const { user_id } = req.params;
   try {
     const token = req.headers.authorization;
+   
+
     if (!token) {
       return res.status(400).json({ error: "Token is required" });
     }
+    
     const config = {
       method: "get",
       maxBodyLength: Infinity,
-      url: `${process.env.CANVAS_API_URL}users/self/courses`,
+      url: `${process.env.CANVAS_API_URL}users/${user_id}/courses`,
       headers: {
         Authorization: `${token}`,
       },

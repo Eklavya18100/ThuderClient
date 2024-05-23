@@ -10,11 +10,13 @@ app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
+// Database connection
+// const db = require('./src/database/db');
+
 // Route to fetch assignment submissions
-const submissionsRoutes = require("./routes/SubmissionRoutes");
-const assignmentsRoutes = require("./routes/Assignments");
-app.use("/api/submissions", submissionsRoutes);
-app.use("/api/assignments", assignmentsRoutes);
+app.use("/api/submissions", require("./src/routes/SubmissionRoutes"));
+app.use("/api/assignments", require("./src/routes/Assignments"));
+app.use("/api/login",require("./src/routes/Login"));
 
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);

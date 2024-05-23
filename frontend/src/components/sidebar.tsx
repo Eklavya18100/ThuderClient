@@ -74,7 +74,7 @@ export default function Sidebar2({
             <div
               className={`flex flex-col justify-end truncate ${isCollapsed ? 'invisible w-0' : 'visible w-auto'}`}
             >
-              <span className='font-medium'>New App</span>
+              <span className='font-medium'>GEL project</span>
             </div>
           </div>
 

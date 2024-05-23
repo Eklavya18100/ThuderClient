@@ -24,12 +24,12 @@ export const sidelinks: SideLink[] = [
     href: '/assignments',
     icon: <IconFileStack size={18} />,
   },
-  /* {
-    title: 'Tasks',
+  {
+    title: 'Notes',
     label: '3',
-    href: '/tasks',
-    icon: <IconChecklist size={18} />,
-  }, */
+    href: '/notes',
+    icon: <IconFileStack size={18} />,
+  },
   /* {
     title: 'Settings',
     label: '',
